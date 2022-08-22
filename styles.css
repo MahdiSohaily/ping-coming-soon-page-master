@@ -5,7 +5,7 @@
   --light-red: hsl(354, 100%, 66%);
   --gray: hsl(0, 0%, 59%);
   --font-family: "Libre Franklin", sans-serif;
-  --fs-100: 0.7rem;
+  --fs-100: 0.75rem;
   --fs-200: 1rem;
   --fs-300: 1.25rem;
   --fs-400: 2rem;
@@ -21,7 +21,7 @@
   --size-200: 1em;
   --size-300: 2em;
   --size-400: 2.5em;
-  --size-500: 3.0em;
+  --size-500: 3em;
   --size-600: 3.5em;
   --size-700: 4em;
   --size-800: 5em;
@@ -110,20 +110,64 @@ select {
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-block: var(--size-200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: var(--size-100);
 }
 
 main {
-    padding: var(--size-200);
+  padding: var(--size-200);
 }
 
+form {
+  margin-block: var(--size-200);
+  padding: var(--size-100);
+  display: flex;
+  justify-content: space-between;
+  gap: 0.4em;
+}
+
+input {
+  width: 69%;
+  border: 1px solid var(--gray);
+  border-radius: 100vmax;
+  padding: 0.3em 1.2em;
+}
+
+::placeholder {
+  color: var(--gray);
+  font-size: var(--fs-100);
+}
+
+button {
+  font-size: var(--fs-100);
+  font-weight: var(--fw-semi-bold);
+  color: white;
+  background-color: var(--blue);
+  border: none;
+  border-radius: 100vmax;
+  padding: 0.3em 3.5em;
+}
 /* component styles */
-.logo{
-    max-width: 70px;
+.logo {
+  max-width: 70px;
+}
+
+.primary-header {
+  color: var(--gray);
+  font-weight: var(--fw-regular);
+}
+
+.highlighted {
+  color: var(--very-dark-blue);
+  font-weight: var(--fw-bold);
+}
+
+.desc {
+  font-size: var(--fs-200);
+  font-weight: var(--fw-regular);
 }
 .hero-image {
-    margin-top:var(--size-600) ;
+  margin-top: var(--size-500);
 }
