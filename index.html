@@ -16,29 +16,40 @@
 </head>
 
 <body>
-<div class="wrapper">
-  <header>
-    <img class="logo" src="./images/logo.svg" alt="website logo">
-  </header>
-  <main>
-    <h1 class="primary-header">We are launching <span class="highlighted">soon!</span></h1>
-    <p class="desc">Subscribe and get notified</p>
-    <form action="#" method="post">
-      <input type="email" name="email" id="email" aria-label="email"
-      placeholder="Your email address...">
-      <button class="btn" type="submit">Notify Me</button>
-    </form>
-    <img class="hero-image" src="./images/illustration-dashboard.png" alt="illustration-dashboard">
-  </main>
-  <footer>
-    <ul>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-    </ul>
-    <p>&copy; Copyright Ping. All rights reserved.</p>
-  </footer>
-</div>
+  <div class="wrapper">
+    <header>
+      <img class="logo" src="./images/logo.svg" alt="website logo">
+    </header>
+    <main>
+      <h1 class="primary-header">We are launching <span class="highlighted">soon!</span></h1>
+      <p class="desc">Subscribe and get notified</p>
+      <form action="#" method="post" onsubmit="event.preventDefault(); return formValidation();">
+        <div class="group">
+          <input type="text" name="email" id="email" aria-label="email" placeholder="Your email address..." required>
+          <em class="error-message">please provide a valid email address</em>
+        </div>
+        <button class="btn" type="submit">Notify Me</button>
+      </form>
+      <img class="hero-image" src="./images/illustration-dashboard.png" alt="illustration-dashboard">
+    </main>
+    <footer>
+      <ul class="social-media">
+        <li><a href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a></li>
+        <li><a href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a></li>
+        <li><a href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a></li>
+      </ul>
+      <p class="copy-right">&copy; Copyright Ping. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="./main.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
