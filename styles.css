@@ -127,8 +127,8 @@ form {
 }
 
 .group {
-    width: 100%;
-  }
+  width: 100%;
+}
 
 input {
   width: 100%;
@@ -139,8 +139,8 @@ input {
   font-size: var(--fs-100);
 }
 
-input:is(:focus){
-    outline: none;
+input:is(:focus) {
+  outline: none;
 }
 
 ::placeholder {
@@ -161,7 +161,7 @@ button {
 }
 
 button:is(:focus, :hover) {
-    cursor: pointer;
+  cursor: pointer;
   opacity: 0.8;
 }
 
@@ -184,6 +184,7 @@ button:is(:focus, :hover) {
   .group {
     width: 65%;
   }
+
   button {
     width: 35%;
   }
@@ -197,13 +198,14 @@ footer {
   padding: var(--size-300);
 }
 
-ion-icon {
+.icon {
   color: var(--blue);
   font-size: 0.7em;
   padding: 0.25em;
   border: 0.1px solid var(--pale-blue);
   border-radius: 50%;
 }
+
 /* component styles */
 .logo {
   max-width: 60px;
@@ -225,17 +227,18 @@ ion-icon {
   font-size: var(--fs-200);
   font-weight: var(--fw-regular);
 }
+
 .hero-image {
   margin-top: var(--size-400);
 }
 
 .error-message {
-    display: none;
-    text-align: center;
-    font-size: 0.5em;
-    color: var(--light-red);
-    font-weight: var(--fw-regular);
-    margin-block: 0.25em;
+  display: none;
+  text-align: center;
+  font-size: 0.5em;
+  color: var(--light-red);
+  font-weight: var(--fw-regular);
+  margin-block: 0.25em;
 }
 
 .social-media {
@@ -266,5 +269,5 @@ ion-icon {
 
   .error-message {
     text-align: left;
-}
+  }
 }
